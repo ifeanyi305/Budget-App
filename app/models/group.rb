@@ -1,6 +1,6 @@
 class Group < ApplicationRecord
   belongs_to :user
-  belongs_to :transfer
+  has_and_belongs_to_many :transfer
 
   validates :name, presence: true
   validates :icon, presence: true
