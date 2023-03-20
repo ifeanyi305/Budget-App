@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.describe Transfer, type: :model do
@@ -5,7 +7,7 @@ RSpec.describe Transfer, type: :model do
   let(:transfer) { Transfer.new(name: 'John Doe', amount: 20, author: user) }
   let(:invalid_attributes) { { name: nil, amount: -5, author: user } }
 
-  describe "validations" do
+  describe 'validations' do
     it 'is not valid without a name' do
       transfer.name = nil
       expect(transfer).not_to be_valid
