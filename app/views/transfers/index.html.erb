@@ -1,0 +1,11 @@
+<button><%= link_to "back", groups_path  %></button>
+<h1><%= @group.name %></h1>
+<p>$<%= @transfers.inject(0) { |sum, e| sum += e.amount } %></p>
+<div><img src="<%= @group.icon %>" alt="icon" /></div>
+
+<% @transfers.each do |transfer| %>
+  <p>name: <%= transfer.name %></p>
+  <p>amount: <%= transfer.amount %></p>
+<% end %>
+
+<%= link_to "new expense", new_group_transfer_path %>
