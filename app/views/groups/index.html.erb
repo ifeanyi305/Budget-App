@@ -1,14 +1,19 @@
-<%= button_to "Sign out", destroy_user_session_path, method: :delete %>
-<p>signed in as <%= current_user.name %> </p>
-<% @groups.each do |group| %>
-  <h1><%= link_to group.name, group_transfers_path(group) %></h1>
-  <div><img src="<%= group.icon %>" alt="icon" /></div>
-  <div>
-    <span>Total expenses</span>
-    <span>
-      $<%= group.transfers.inject(0) { |sum, e| sum += e.amount } %>
-    </span>
-  </div>
-<% end %>
+<section>
+  <header>
+    
+  </header>
+  <%= button_to "Sign out", destroy_user_session_path, method: :delete %>
+  <p>signed in as <%= current_user.name %> </p>
+  <% @groups.each do |group| %>
+    <h1><%= link_to group.name, group_transfers_path(group) %></h1>
+    <div><img src="<%= group.icon %>" alt="icon" /></div>
+    <div>
+      <span>Total expenses</span>
+      <span>
+        $<%= group.transfers.inject(0) { |sum, e| sum += e.amount } %>
+      </span>
+    </div>
+  <% end %>
 
-<%= link_to "new category", new_group_path %>
+  <%= link_to "new category", new_group_path %>
+</section>

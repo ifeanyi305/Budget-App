@@ -74,3 +74,5 @@ end
 
 gem 'cancancan'
 gem 'devise'
+
+gem "tailwindcss-rails", "~> 2.0"
