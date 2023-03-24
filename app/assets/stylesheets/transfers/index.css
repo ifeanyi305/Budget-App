@@ -1,0 +1,16 @@
+.green {
+  color: green;
+}
+
+.total_expenses {
+  padding: 8px;
+}
+
+.groups {
+  padding: 10px;
+}
+
+.transfer_icon {
+  margin: auto;
+  width: 50%;
+}

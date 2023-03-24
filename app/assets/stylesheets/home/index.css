@@ -1,0 +1,32 @@
+.splash {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.title {
+  font-size: 28px;
+  font-style: italic;
+  color: rgb(27, 27, 139);
+  margin-bottom: 10px;
+}
+
+.splash_buttons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.login_form {
+  margin: 10px;
+}
+
+.login_btn {
+  background-color: #2C5D97;
+  color: #fff;
+  text-align: center;
+  padding: 4px;
+  border-radius: 5px;
+  margin-top: 8px;
+}

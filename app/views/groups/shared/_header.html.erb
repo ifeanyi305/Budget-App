@@ -1,0 +1,5 @@
+<div class="header bg-[#3774BD] py-4">
+  <h1 class="text-[#fff]">Transactions</h1>
+  <p class="text-[#fff]"><%= current_user.name %></p>
+  <%= button_to "Sign out", destroy_user_session_path, method: :delete %>
+</div>

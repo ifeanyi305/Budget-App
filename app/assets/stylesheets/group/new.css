@@ -1,0 +1,21 @@
+.save {
+  background-color: #60B626;
+  color: #fff;
+  padding: 4px;
+  margin-top: 10px;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+.label {
+  display: block;
+}
+
+.category_form {
+  margin: auto;
+  width: fit-content;
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: rgba(231, 237, 242, 0.591);
+}
