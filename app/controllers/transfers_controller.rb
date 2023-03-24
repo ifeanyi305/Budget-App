@@ -1,4 +1,6 @@
 class TransfersController < ApplicationController
+  before_action :authenticate_user!
+
   def index
     @transfers = Transfer.joins(:groups).where(groups: { id: params[:group_id] }).order(created_at: :desc)
     @group = Group.find(params[:group_id])

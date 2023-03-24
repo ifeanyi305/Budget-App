@@ -1,7 +1,10 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
-  subject { User.new(name: 'John Doe') }
+  subject do
+    User.new(name: 'ifeanyi', email: 'otijosephat305@gmail.com', password: 'ifyjapan',
+             password_confirmation: 'ifyjapan')
+  end
 
   describe 'validations' do
     it 'is not valid without a name' do

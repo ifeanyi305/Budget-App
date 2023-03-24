@@ -74,3 +74,9 @@ end
 
 gem 'cancancan'
 gem 'devise'
+
+gem 'tailwindcss-rails', '~> 2.0'
+
+gem 'factory_bot_rails'
+gem 'material_icons'
+gem 'rails-controller-testing'
