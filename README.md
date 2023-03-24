@@ -55,6 +55,14 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Live Demo
+
+[Budget App](https://budget-bp9n.onrender.com/)
+
+## video presentation
+
+[Budget app presentation](https://drive.google.com/file/d/1vNwaVK4C1RW-q3lKO0ng0vlt8A6KPR_Y/view?usp=sharing)
+
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
