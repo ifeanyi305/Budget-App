@@ -1,4 +1,4 @@
-## Blog App
+## Budget App
 
 <a name="readme-top"></a>
 
@@ -28,7 +28,7 @@
 
 >
 
-**[Blog App]** is a mobile web application where you can manage your budget: You have a list of expenses associated with a category, so that you can see how much money you spent and on what.
+**[Budget App]** is a mobile web application where you can manage your budget: You have a list of expenses associated with a category, so that you can see how much money you spent and on what.
 
 ## 🛠 Built With <a name="built-with"></a>
 ```sh
@@ -92,7 +92,8 @@ Install this project with:
 
  <ul>
    <li>cd my-project</li>
-  <li>gem install</li>
+  <li>bundle install</li>
+  <li>rails db:create db:migrate db:seed</li>
  </ul>
 
 ### Usage
