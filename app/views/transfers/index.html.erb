@@ -1,0 +1,19 @@
+<section>
+  <%= render 'groups/shared/header' %>
+
+  <button class="save"><%= link_to "back", groups_path  %></button>
+  <div class="total_expenses">
+    <h1><%= @group.name %></h1>
+    <span>Total expenses </span><span class="green">$<%= @transfers.inject(0) { |sum, e| sum += e.amount } %></span>
+  </div>
+  <div><img class="transfer_icon" src="<%= @group.icon %>" alt="icon" /></div>
+  
+  <% @transfers.each do |transfer| %>
+    <div class="total_expenses">
+      <p><%= transfer.name %></p>
+      <p>amount: <span class="green">$<%= transfer.amount %></span></p>
+    </div>
+  <% end %>
+  
+  <div class="category_btn_container"><button class="new_category"><%= link_to "new expense", new_group_transfer_path %></button><div>
+</section>
